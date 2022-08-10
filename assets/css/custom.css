@@ -1,0 +1,221 @@
+body {
+    overflow: hidden;
+}
+
+.content-master {
+    max-height: 90vh;
+}
+
+/* .content-master::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+.content-master::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.content-master::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 10px;
+}
+
+.content-master::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+} */
+
+.jumbotron {
+    background: url(../img/bg_2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/* TRANSAKSI INVOICE  */
+
+.status-trans-lunas::before {
+    content: "LUNAS";
+    font-size: 10em;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    z-index: 99;
+    color: white;
+    -webkit-transform: rotate(320deg);
+    -moz-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    transform: rotate(320deg);
+}
+
+.jumbotron::before {
+    content: "";
+    background: #111827;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.az-body-login {
+    background: url(../img/bg_2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.az-body-login::after {
+    content: "";
+    background: #111827;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.az-body-login .auth-form {
+    z-index: 2;
+}
+
+/* DATA TABLES */
+.bg-danger-light {
+    background: rgb(254, 202, 202);
+    background: linear-gradient(313deg, rgba(254, 202, 202, 1) 0%, rgba(255, 234, 234, 1) 20%, rgba(255, 255, 255, 1) 50%);
+}
+
+.bg-success-light {
+    background: rgb(187, 247, 208);
+    background: linear-gradient(313deg, rgba(187, 247, 208, 1) 0%, rgba(222, 251, 232, 1) 20%, rgba(255, 255, 255, 1) 50%);
+}
+
+.bg-warning-light {
+    background: rgb(254, 243, 199);
+    background: linear-gradient(49deg, rgba(254, 243, 199, 1) 0%, rgba(255, 249, 229, 1) 10%, rgba(255, 255, 255, 1) 30%);
+}
+
+.bg-primary-light {
+    background: rgb(186, 230, 253);
+    background: linear-gradient(49deg, rgba(186, 230, 253, 1) 0%, rgba(221, 243, 254, 1) 15%, rgba(255, 255, 255, 1) 30%);
+}
+
+/* SPINNER LOADER */
+/* .loader::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    color: #2563eb;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+}
+
+
+@keyframes animloader {
+    0% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+    }
+
+    25% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 2px;
+    }
+
+    50% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 2px, -38px 0 0 -2px;
+    }
+
+    75% {
+        box-shadow: 14px 0 0 2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+    }
+
+    100% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
+    }
+} */
+
+.loader::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px auto;
+    position: relative;
+    color: #dc2626;
+    box-sizing: border-box;
+    animation: mulShdSpin 1s linear infinite;
+}
+
+
+@keyframes mulShdSpin {
+
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em,
+            2em -2em 0 0em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 0;
+    }
+
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+            3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 -1em;
+    }
+
+    25% {
+        box-shadow: 0 -3em 0 -0.5em,
+            2em -2em 0 0, 3em 0 0 0.2em,
+            2em 2em 0 0, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 -1em;
+    }
+
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+            -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+            -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+            -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
